@@ -4,9 +4,16 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import Card from "./cards/cardsmulti"
+
+
+
+
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Home />
   </React.StrictMode>,
   document.getElementById('root')
 );
