@@ -6,6 +6,7 @@ function Nav() {
    
   return (
   <nav>
+    
       <h3>logo</h3>
       <ui className ="nav-links">
           <Link   to ="/login">
@@ -15,6 +16,7 @@ function Nav() {
           <li>Register</li>
           </Link>
       </ui>
+
   </nav>
   );
 }

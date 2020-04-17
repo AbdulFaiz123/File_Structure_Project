@@ -1,22 +1,12 @@
 import React from 'react'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  useParams,
-  Link,
-  useHistory
-} from "react-router-dom"
-import logo from "../cards/logo"
-import Typography from '@material-ui/core/Typography';
-
-
 import './card-style.css';
 
 const Card = props =>{
     return(
+    
+        
         <div>
-            <h3>logo</h3>
+          
          
         <div className="card test-center shadow">
             <div className="overflow">
@@ -31,6 +21,7 @@ const Card = props =>{
             </div>
         </div>  
         </div> 
+        
         
     
        

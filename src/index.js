@@ -5,7 +5,8 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import Card from "./cards/cardsmulti"
+
+import Card from "./cards/route"
 
 
 
@@ -13,7 +14,7 @@ import Card from "./cards/cardsmulti"
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home />
+    <Card />
   </React.StrictMode>,
   document.getElementById('root')
 );

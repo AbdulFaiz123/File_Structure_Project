@@ -1,20 +1,36 @@
-import React,{Component}from 'react'
-import  Card from './cardsmulti'
-
+import React from 'react';
 import Login from "../container/login"
-import Main from "../container/main"
-import {BrowserRouter as Router,Switch,Route } from 'react-router-dom';
+import Nav from "../container/nav";
+import Sign from "../container/signupform";
 
-function Routes() {
-    return (
-      <Router>
-  
-      <div className="main">
-      <Switch>
-      <Route path ="/" exact component={Main}/>
-      </Switch>
-      </div>
-      </Router>
-    );
-  }
-  export default Routes;
+
+
+import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
+import Cardsmulti from './cardsmulti';
+
+function first() {
+  return (
+    <Router>
+
+    <div className="centre">
+    <Nav/>
+    <Switch>
+    <Route path ="/" exact component={Cardsmulti}/>
+    <Route path ="/home"  component={Home}/>
+    <Route path="/login" component={Login}/>
+    <Route path="/Sign" component={Sign}/>
+
+    </Switch>
+   
+    </div>
+    </Router>
+  );
+}
+
+
+const Home =() =>(
+    <div>
+        <h1>Home Page</h1>
+    </div>
+)
+export default first;
